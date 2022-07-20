@@ -32,6 +32,12 @@ section {
   gap: 10%;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 1%;
+}
+
 .left-card {
   width: 40%;
   height: 100%;
