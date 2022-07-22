@@ -1,13 +1,14 @@
+@import url('http://fonts.cdnfonts.com/css/casino');
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: #333;
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
 }
 
 header {
@@ -30,6 +31,8 @@ section {
   display: flex;
   flex-direction: row;
   gap: 10%;
+  height: 100%;
+  padding: 2%;
 }
 
 h2 {
@@ -41,7 +44,7 @@ h2 {
 .left-card {
   width: 40%;
   height: 100%;
-  background-color: #fff;
+  border-radius: 5px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -53,21 +56,26 @@ h2 {
   justify-content: space-between;
 }
 
-ul {
+.score-board {
   display: flex;
+  height: 400px;
   flex-direction: column;
   gap: 10px;
   border: 1px solid #ccc;
   padding: 5px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
-li {
+.score-board div:nth-child(even) {
+  background-color: #ccc;
+}
+
+.score {
   padding: 5px;
-}
-
-li:nth-child(even) {
-  background-color: rgba(128, 128, 128, 0.31);
+  display: flex;
+  font-size: 1.5em;
+  font-weight: bolder;
+  gap: 30px;
 }
 
 .right-card {
@@ -75,7 +83,6 @@ li:nth-child(even) {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #fff;
   padding: 10px;
 }
 
