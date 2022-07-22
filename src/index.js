@@ -7,8 +7,8 @@ const refresh = document.getElementById('refresh');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   addScore(e).catch((err) => {
-      console.log(err);
-    });
+    console.log(err);
+  });
   form.reset();
 });
 

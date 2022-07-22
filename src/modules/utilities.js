@@ -1,7 +1,9 @@
+/* eslint-disable consistent-return */
+
 export const getScores = async () => {
   const scoreBoard = document.querySelector('.score-board');
   scoreBoard.innerHTML = '';
-  try{
+  try {
     const response = await fetch(
       'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/U89UpEn5EXu1MQahYhm3/scores/',
     );
@@ -12,14 +14,13 @@ export const getScores = async () => {
     <div class="score"><span>${score.user} :</span><span>${score.score}</span></div>
     `;
     });
-  } catch(err){
+  } catch (err) {
     console.log(err);
   }
-
 };
 
 export const addScore = async (e) => {
-  try{
+  try {
     return await fetch(
       'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/U89UpEn5EXu1MQahYhm3/scores/',
       {
@@ -33,7 +34,7 @@ export const addScore = async (e) => {
         },
       },
     );
-  } catch (err){
+  } catch (err) {
     console.log(err);
   }
 };
