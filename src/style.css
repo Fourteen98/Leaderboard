@@ -9,13 +9,6 @@
 
 body {
   height: 100%;
-  background-image: url('img/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  font-family: 'Casino', sans-serif;
-  opacity: 1.5;
 }
 
 header {
@@ -27,7 +20,6 @@ h1 {
   font-weight: bold;
   padding-left: 1%;
   justify-content: center;
-  color: #c0f859;
 }
 
 section {
@@ -41,7 +33,6 @@ section {
   gap: 10%;
   height: 100%;
   padding: 2%;
-  background-color: transparent;
 }
 
 h2 {
@@ -76,21 +67,17 @@ h2 {
 }
 
 .score-board div:nth-child(even) {
-  background-color: #eaa8a8;
+  background-color: #ccc;
 }
 
-.score-board div:nth-child(odd) {
-  background-color: #f35555;
-}
+
 
 .score {
   padding: 5px;
   display: flex;
   font-size: 1.5em;
   font-weight: bolder;
-  font-family: 'Casino 3D', sans-serif;
   gap: 30px;
-  color: #3d2222;
 }
 
 .right-card {
@@ -99,10 +86,6 @@ h2 {
   flex-direction: column;
   gap: 1rem;
   padding: 10px;
-}
-
-.marquee-font {
-  color: greenyellow;
 }
 
 form {
@@ -133,6 +116,6 @@ button {
 }
 
 button:hover {
-  background-color: #a52a2a;
+  background-color: #ccc;
   color: #fff;
 }
