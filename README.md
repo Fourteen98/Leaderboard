@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://fourteen98.github.io/Leaderboard/dist/)
 
 ## Getting Started
 
